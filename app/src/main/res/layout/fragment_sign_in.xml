@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="huytranq.dayum.views.fragments.access.SignInFragment"
+    android:orientation="vertical"
+    android:paddingTop="128dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:id="@+id/fragment_sign_in_usernameWrapper">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:id="@+id/fragment_sign_in_username"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_margin="24dp"
+        android:layout_gravity="center"
+        android:id="@+id/fragment_sign_in_passwordWrapper">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:id="@+id/fragment_sign_in_password"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:text="SIGN IN"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_margin="48dp"
+            android:id="@+id/fragment_sign_in_submit"/>
+    </FrameLayout>
+
+
+</LinearLayout>
